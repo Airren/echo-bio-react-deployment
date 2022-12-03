@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: echo-bio-react
+  namespace: echo-bio
 spec:
   selector:
     app: echo-bio-react

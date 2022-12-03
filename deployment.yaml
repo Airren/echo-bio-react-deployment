@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: echo-bio-react
+  namespace: echo-bio
 spec:
   selector:
     matchLabels:
