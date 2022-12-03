@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo-bio-react
+spec:
+  selector:
+    matchLabels:
+      app: echo-bio-react
+  template:
+    metadata:
+      labels:
+        app: echo-bio-react
+    spec:
+      containers:
+      - name: echo-bio-react
+        image: airren/echo-bio-react:v0.0.11
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
