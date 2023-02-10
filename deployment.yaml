@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: echo-bio-react
-        image: airren/echo-bio-react:v0.0.25
+        image: airren/echo-bio-react:v0.0.26
         resources:
           limits:
             memory: "128Mi"
